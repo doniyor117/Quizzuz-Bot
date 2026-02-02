@@ -1,8 +1,5 @@
 ﻿# 🎓 QuizzuzBot - AI-Powered Vocabulary & Quiz Learning Platform
 
-> **LIVE ON** [@Quizzuz_Bot](https://t.me/Quizzuz_Bot)
-
-> **Bot updates on** [telegram channel](https://t.me/Quizzuz)
 
 <div align="center">
 
@@ -18,6 +15,10 @@
 </div>
 
 ---
+> **LIVE ON** [@Quizzuz_Bot](https://t.me/Quizzuz_Bot)
+
+> **Bot updates on** [telegram channel](https://t.me/Quizzuz)
+
 
 ## 📖 Overview
 
@@ -571,6 +572,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 [Report Bug](https://github.com/doniyor117/Quizzuz-Bot/issues) · [Request Feature](https://github.com/doniyor117/Quizzuz-Bot/issues) · [Documentation](https://github.com/doniyor117/Quizzuz-Bot/wiki)
 
 </div>
+
 
 
 
