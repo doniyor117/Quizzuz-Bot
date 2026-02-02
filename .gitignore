@@ -1,0 +1,12 @@
+virtual/
+
+__pycache__/
+
+.env
+
+__pycache__/
+__pycache__/
+*.pyc
+virtual/
+serviceAccountKey.json
+.env

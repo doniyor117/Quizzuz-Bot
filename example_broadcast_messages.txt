@@ -1,0 +1,60 @@
+# Example Broadcast Messages
+
+## Simple Greeting (Uzbek)
+Assalomu alaykum {user_first_name}! 👋
+
+Bizning botimizdan foydalanayotganingizdan xursandmiz.
+
+## Motivational Message with Stats
+Hey {user_first_name}! 🌟
+
+You're doing amazing!
+
+📊 Your Stats:
+• Level: {level}
+• Streak: {streak} days 🔥
+• TX Coins: {xp}
+
+Keep learning! 💪
+
+## Feature Announcement
+Hi {user_first_name}! 🎉
+
+We have exciting news!
+
+New AI features are now available to help you learn faster.
+
+Your current progress:
+📈 Level {level}
+🔥 {streak}-day streak
+
+Try them now! 🚀
+
+## Daily Reminder (Bilingual)
+Assalomu alaykum {user_first_name}! / Hello {user_first_name}! 👋
+
+Don't forget to practice today!
+Bugun mashq qilishni unutmang!
+
+🔥 Current streak: {streak} days
+💰 TX Coins: {xp}
+
+## Weekly Challenge
+Hey {user_first_name}! 💪
+
+Weekly Challenge:
+Complete 50 cards this week!
+
+Your Progress:
+✅ Level {level}
+🔥 {streak}-day streak
+💎 {xp} TX
+
+You can do it! 🎯
+
+## Simple Update
+Hi {user_first_name}!
+
+The bot has been updated with new features. We are happy that you are using our bot.
+
+Keep learning! 📚

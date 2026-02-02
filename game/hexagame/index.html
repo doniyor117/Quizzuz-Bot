@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Word Scramble</title>
+
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+
+<body>
+    <!-- TX Display -->
+    <div id="txDisplay">TX: <span id="txAmount">0</span></div>
+
+    <!-- Main Container -->
+    <div id="app">
+
+        <!-- Menu Screen -->
+        <div id="menuScreen" class="screen active">
+            <div class="menu-container">
+                <h1 class="game-title">Word<br>Scramble</h1>
+                <p class="game-subtitle">Unscramble the words!</p>
+
+                <div class="difficulty-section">
+                    <p class="difficulty-label">Select Difficulty:</p>
+                    <div class="difficulty-buttons">
+                        <button id="btnEasy" class="btn btn-difficulty btn-easy">
+                            🟢 Easy
+                        </button>
+                        <button id="btnModerate" class="btn btn-difficulty btn-moderate">
+                            🟡 Moderate
+                        </button>
+                        <button id="btnHard" class="btn btn-difficulty btn-hard">
+                            🔴 Hard
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-buttons">
+                    <button id="btnLeaderboard" class="btn btn-secondary">
+                        <span class="btn-icon">🏆</span>
+                        Leaderboard
+                    </button>
+                    <button id="btnQuit" class="btn btn-danger">
+                        <span class="btn-icon">✕</span>
+                        Quit
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <div class="game-header">
+                <div class="stat-box">
+                    <span class="stat-label">Score</span>
+                    <span id="gameScore" class="stat-value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Time</span>
+                    <span id="gameTimer" class="stat-value">60</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Streak</span>
+                    <span id="gameStreak" class="stat-value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Lives</span>
+                    <span id="gameLives" class="stat-value lives-value">❤️❤️❤️</span>
+                </div>
+            </div>
+
+            <div class="game-content">
+                <div class="scrambled-word-container">
+                    <p class="scrambled-label">Unscramble this:</p>
+                    <div id="scrambledWord" class="scrambled-word">DROW</div>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="answerInput" class="answer-input" placeholder="Type your answer..."
+                        autocomplete="off" autocapitalize="none">
+                    <button id="btnSubmit" class="btn btn-submit">✓</button>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <button id="btnSkip" class="btn btn-skip">Skip Word</button>
+            </div>
+
+            <button id="btnQuitGame" class="btn btn-quit-game">Quit Game</button>
+        </div>
+
+        <!-- Leaderboard Screen -->
+        <div id="leaderboardScreen" class="screen">
+            <div class="leaderboard-header">
+                <h2>🏆 Leaderboard</h2>
+            </div>
+
+            <div id="leaderboardContent" class="leaderboard-content">
+                <div class="leaderboard-loading">Loading...</div>
+            </div>
+
+            <button id="btnBackFromLeaderboard" class="btn btn-back">← Back to Menu</button>
+        </div>
+
+        <!-- Game Over Overlay -->
+        <div id="gameOverOverlay" class="overlay">
+            <div class="overlay-content">
+                <h2>⏱️ Time's Up!</h2>
+                <div class="final-stats">
+                    <div class="final-stat">
+                        <span class="final-stat-label">Final Score</span>
+                        <span id="finalScore" class="final-stat-value">0</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-stat-label">Words Solved</span>
+                        <span id="wordsSolved" class="final-stat-value">0</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-stat-label">TX Earned</span>
+                        <span id="txEarned" class="final-stat-value">+0</span>
+                    </div>
+                </div>
+                <div class="overlay-buttons">
+                    <button id="btnPlayAgain" class="btn btn-primary">Play Again</button>
+                    <button id="btnBackToMenu" class="btn btn-secondary">Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
